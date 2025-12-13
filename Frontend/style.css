@@ -1480,6 +1480,12 @@ section h2 {
   transform: translateX(4px);
 }
 
+.social{
+  margin-left: 400px;
+}
+
+
+
 .social-links {
   display: flex;
   gap: 16px;
