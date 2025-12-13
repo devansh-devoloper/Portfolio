@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses | DevProg</title>
+  <link rel="stylesheet" href="./styles/courses.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="navBar">
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="/Frontend/assets/imgs/logo.png" /></a>
+          <h1 class="logo-text">DevProg</h1>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="navRight" id="navRight">
+          <ul>
+            <li><a href="/Frontend/index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <a href="/Frontend/Pages/login.html" class="animated-button" role="button" aria-label="Login">
+            <span class="button-text">Login</span>
+            <span class="sliding-text">Login</span>
+            <i class="fas fa-arrow-right button-icon" aria-hidden="true"></i>
+            <!-- Example using Font Awesome -->
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main section goes here -->
+
+  <main class="courses-container">
+    <!-- Left Sidebar - Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h3>Topics</h3>
+        <p class="subtitle">Select a topic</p>
+      </div>
+
+      <nav class="topics-list">
+        <!-- JavaScript -->
+        <div class="topic-item active" onclick="showContent('javascript')">
+          <div class="topic-icon javascript-icon">
+            <span>☕</span>
+          </div>
+          <div class="topic-info">
+            <h4>JavaScript</h4>
+            <p class="topic-level">Beginner to Advanced</p>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="topic-item" onclick="showContent('python')">
+          <div class="topic-icon python-icon">
+            <span>🐍</span>
+          </div>
+          <div class="topic-info">
+            <h4>Python</h4>
+            <p class="topic-level">Beginner to Advanced</p>
+          </div>
+        </div>
+
+        <!-- TypeScript -->
+        <div class="topic-item" onclick="showContent('typescript')">
+          <div class="topic-icon typescript-icon">
+            <span>📘</span>
+          </div>
+          <div class="topic-info">
+            <h4>TypeScript</h4>
+            <p class="topic-level">Intermediate</p>
+          </div>
+        </div>
+
+        <!-- React -->
+        <div class="topic-item" onclick="showContent('react')">
+          <div class="topic-icon react-icon">
+            <span>⚛️</span>
+          </div>
+          <div class="topic-info">
+            <h4>React</h4>
+            <p class="topic-level">Intermediate</p>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="topic-item" onclick="showContent('java')">
+          <div class="topic-icon java-icon">
+            <span>☕</span>
+          </div>
+          <div class="topic-info">
+            <h4>Java</h4>
+            <p class="topic-level">Beginner to Advanced</p>
+          </div>
+        </div>
+
+        <!-- C# -->
+        <div class="topic-item" onclick="showContent('csharp')">
+          <div class="topic-icon csharp-icon">
+            <span>🔷</span>
+          </div>
+          <div class="topic-info">
+            <h4>C#</h4>
+            <p class="topic-level">Beginner to Advanced</p>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Right Content Area -->
+    <section class="main-content">
+      <!-- JavaScript Content -->
+      <div class="content-section active" id="javascript">
+        <div class="content-header">
+          <div class="content-title">
+            <div class="content-badge">☕</div>
+            <h2>JavaScript</h2>
+          </div>
+          <p class="content-subtitle">
+            A versatile programming language for web development
+          </p>
+        </div>
+
+        <div class="content-body">
+          <h3>Overview</h3>
+          <p>
+            JavaScript is a lightweight, interpreted programming language
+            designed primarily for adding interactive features to web pages.
+            It has evolved to become one of the most popular programming
+            languages for both front-end and back-end development.
+          </p>
+
+          <h3>Key Features</h3>
+          <ul class="features-list">
+            <li>
+              <strong>Dynamic Typing:</strong> Variables can hold any data
+              type
+            </li>
+            <li>
+              <strong>First-Class Functions:</strong> Functions are objects
+              and can be passed as arguments
+            </li>
+            <li>
+              <strong>Asynchronous Programming:</strong> Support for
+              callbacks, promises, and async/await
+            </li>
+            <li>
+              <strong>DOM Manipulation:</strong> Easy interaction with HTML
+              elements
+            </li>
+            <li>
+              <strong>Event Handling:</strong> Respond to user interactions
+            </li>
+          </ul>
+
+          <h3>Learning Path</h3>
+          <ol class="learning-path">
+            <li>Basics and Syntax</li>
+            <li>Variables and Data Types</li>
+            <li>Functions and Scope</li>
+            <li>Objects and Arrays</li>
+            <li>DOM Manipulation</li>
+            <li>Asynchronous JavaScript</li>
+            <li>ES6+ Features</li>
+          </ol>
+
+          <h3>Getting Started</h3>
+          <p>
+            Start with the fundamentals of JavaScript syntax and gradually
+            progress to advanced concepts like closures, prototypes, and
+            asynchronous programming patterns.
+          </p>
+        </div>
+      </div>
+
+      <!-- Python Content -->
+
+      <div class="content-section" id="python">
+        <div class="content-header">
+          <div class="content-title">
+            <div class="content-badge">🐍</div>
+            <h2>Python</h2>
+          </div>
+          <p class="content-subtitle">
+            A powerful, easy-to-learn programming language
+          </p>
+        </div>
+
+        <div class="content-body">
+          <h3>Overview</h3>
+          <p>
+            Python is a high-level, interpreted programming language known for
+            its simplicity and readability. It's widely used in web
+            development, data science, machine learning, and automation.
+          </p>
+
+          <h3>Key Features</h3>
+          <ul class="features-list">
+            <li>
+              <strong>Simple Syntax:</strong> Easy to read and write code
+            </li>
+            <li><strong>Versatile:</strong> Suitable for multiple domains</li>
+            <li>
+              <strong>Extensive Libraries:</strong> Rich ecosystem of packages
+              and frameworks
+            </li>
+            <li>
+              <strong>Community Support:</strong> Large and active community
+            </li>
+            <li>
+              <strong>Cross-Platform:</strong> Runs on Windows, Mac, and Linux
+            </li>
+          </ul>
+
+          <h3>Learning Path</h3>
+          <ol class="learning-path">
+            <li>Syntax</li>
+            <li>Control Flow</li>
+            <li>Functions and Modules</li>
+            <li>Object-Oriented Programming</li>
+            <li>File Handling</li>
+            <li>Data Structures</li>
+            <li>Advanced Topics</li>
+          </ol>
+
+          <h3>Getting Started</h3>
+          <p>
+            Begin with the fundamentals and gradually explore Python's
+            powerful libraries for data manipulation, web development, and
+            machine learning.
+          </p>
+
+          <h3>1. Introduction</h3>
+          <p>➡️ Python is a programming language that combines the features of C and Java. It offers elegant style
+            of devoloping programs like C. When the devolopers needs to go to the object orientation, Python offers
+            classes and objects like Java. </p>
+
+          <p>➡️ Python was devoloped by <span style="color: #0ba879e0">Guido van Rossum</span> in the year <span
+              style="color: red;">1991</span> at the Center for Mathematics and Computer Science managed by Dutch
+            government</p>
+
+    </section>
+    </div>
+    </div>
+
+    <!-- TypeScript Content -->
+
+    <div class="content-section" id="typescript">
+      <div class="content-header">
+        <div class="content-title">
+          <div class="content-badge">📘</div>
+          <h2>TypeScript</h2>
+        </div>
+        <p class="content-subtitle">
+          JavaScript with static typing and advanced features
+        </p>
+      </div>
+
+      <div class="content-body">
+        <h3>Overview</h3>
+        <p>
+          TypeScript is a superset of JavaScript that adds static typing and
+          other advanced features. It compiles to plain JavaScript and can
+          be used for large-scale application development.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul class="features-list">
+          <li>
+            <strong>Static Typing:</strong> Catch type errors at compile
+            time
+          </li>
+          <li>
+            <strong>Interfaces:</strong> Define contracts for object
+            structures
+          </li>
+          <li><strong>Generics:</strong> Write reusable, type-safe code</li>
+          <li><strong>Enums:</strong> Named sets of constants</li>
+          <li>
+            <strong>Decorators:</strong> Enhance classes and properties
+          </li>
+        </ul>
+
+        <h3>Learning Path</h3>
+        <ol class="learning-path">
+          <li>TypeScript Basics</li>
+          <li>Type System</li>
+          <li>Interfaces and Types</li>
+          <li>Classes and OOP</li>
+          <li>Generics</li>
+          <li>Advanced Types</li>
+          <li>Decorators and Utilities</li>
+        </ol>
+
+        <h3>Getting Started</h3>
+        <p>
+          Learn TypeScript after mastering JavaScript to leverage type
+          safety and build more robust applications.
+        </p>
+      </div>
+    </div>
+
+    <!-- React Content -->
+
+    <div class="content-section" id="react">
+      <div class="content-header">
+        <div class="content-title">
+          <div class="content-badge">⚛️</div>
+          <h2>React</h2>
+        </div>
+        <p class="content-subtitle">
+          A JavaScript library for building user interfaces
+        </p>
+      </div>
+
+      <div class="content-body">
+        <h3>Overview</h3>
+        <p>
+          React is a popular JavaScript library for building interactive
+          user interfaces with reusable components. It uses a declarative
+          approach and efficiently updates the DOM.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul class="features-list">
+          <li>
+            <strong>Component-Based:</strong> Build encapsulated components
+            that manage state
+          </li>
+          <li>
+            <strong>Virtual DOM:</strong> Efficient rendering and updates
+          </li>
+          <li><strong>JSX:</strong> Write HTML-like code in JavaScript</li>
+          <li>
+            <strong>Hooks:</strong> Use state and other features in
+            functional components
+          </li>
+          <li>
+            <strong>Unidirectional Data Flow:</strong> Predictable data
+            handling
+          </li>
+        </ul>
+
+        <h3>Learning Path</h3>
+        <ol class="learning-path">
+          <li>React Fundamentals</li>
+          <li>Components and Props</li>
+          <li>State and Lifecycle</li>
+          <li>Hooks</li>
+          <li>Routing</li>
+          <li>State Management</li>
+          <li>Advanced Patterns</li>
+        </ol>
+
+        <h3>Getting Started</h3>
+        <p>
+          Start with functional components and hooks to learn modern React
+          development patterns.
+        </p>
+      </div>
+    </div>
+
+    <!-- Java Content -->
+
+    <div class="content-section" id="java">
+      <div class="content-header">
+        <div class="content-title">
+          <div class="content-badge">☕</div>
+          <h2>Java</h2>
+        </div>
+        <p class="content-subtitle">
+          A robust, object-oriented programming language
+        </p>
+      </div>
+
+      <div class="content-body">
+        <h3>Overview</h3>
+        <p>
+          Java is a widely-used, object-oriented programming language known
+          for its "write once, run anywhere" philosophy. It's used for
+          enterprise applications, Android development, and more.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul class="features-list">
+          <li>
+            <strong>Object-Oriented:</strong> Classes, inheritance, and
+            polymorphism
+          </li>
+          <li>
+            <strong>Platform Independent:</strong> Runs on any platform with
+            JVM
+          </li>
+          <li>
+            <strong>Strong Type System:</strong> Type safety at compile time
+          </li>
+          <li>
+            <strong>Rich Ecosystem:</strong> Extensive libraries and
+            frameworks
+          </li>
+          <li>
+            <strong>Multithreading:</strong> Built-in support for concurrent
+            programming
+          </li>
+        </ul>
+
+        <h3>Learning Path</h3>
+        <ol class="learning-path">
+          <li>Java Basics</li>
+          <li>Object-Oriented Programming</li>
+          <li>Collections Framework</li>
+          <li>Exception Handling</li>
+          <li>Multithreading</li>
+          <li>File I/O</li>
+          <li>Advanced Concepts</li>
+        </ol>
+
+        <h3>Getting Started</h3>
+        <p>
+          Master Java fundamentals and object-oriented principles to build
+          scalable applications.
+        </p>
+      </div>
+    </div>
+
+    <!-- C# Content -->
+    <div class="content-section" id="csharp">
+      <div class="content-header">
+        <div class="content-title">
+          <div class="content-badge">🔷</div>
+          <h2>C#</h2>
+        </div>
+        <p class="content-subtitle">
+          A modern, object-oriented programming language by Microsoft
+        </p>
+      </div>
+
+      <div class="content-body">
+        <h3>Overview</h3>
+        <p>
+          C# is a modern, object-oriented language developed by Microsoft.
+          It's used for building Windows applications, web services, games
+          with Unity, and cloud applications with Azure.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul class="features-list">
+          <li>
+            <strong>Modern Language Design:</strong> Features from Java and
+            other languages
+          </li>
+          <li>
+            <strong>LINQ:</strong> Language-Integrated Query for data
+            manipulation
+          </li>
+          <li>
+            <strong>Async/Await:</strong> Easy asynchronous programming
+          </li>
+          <li>
+            <strong>Strong Type System:</strong> Compile-time type checking
+          </li>
+          <li>
+            <strong>Garbage Collection:</strong> Automatic memory management
+          </li>
+        </ul>
+
+        <h3>Learning Path</h3>
+        <ol class="learning-path">
+          <li>C# Fundamentals</li>
+          <li>Object-Oriented Programming</li>
+          <li>Collections and Generics</li>
+          <li>LINQ</li>
+          <li>Asynchronous Programming</li>
+          <li>Entity Framework</li>
+          <li>Advanced Topics</li>
+        </ol>
+
+        <h3>Getting Started</h3>
+        <p>
+          Learn C# to build powerful applications for .NET platform and game
+          development with Unity.
+        </p>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <script>
+    // Hamburger Menu Toggle
+    const hamburgerMenu = document.getElementById("hamburgerMenu");
+    const navRight = document.getElementById("navRight");
+
+    hamburgerMenu.addEventListener("click", function () {
+      navRight.classList.toggle("active");
+      hamburgerMenu.classList.toggle("active");
+    });
+
+    // Close menu when a link is clicked
+    const navLinks = navRight.querySelectorAll("a");
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        navRight.classList.remove("active");
+        hamburgerMenu.classList.remove("active");
+      });
+    });
+
+    function showContent(topicId) {
+      // Hide all content sections
+      const sections = document.querySelectorAll(".content-section");
+      sections.forEach((section) => section.classList.remove("active"));
+
+      // Remove active class from all topics
+      const topics = document.querySelectorAll(".topic-item");
+      topics.forEach((topic) => topic.classList.remove("active"));
+
+      // Show selected content
+      document.getElementById(topicId).classList.add("active");
+
+      // Add active class to clicked topic
+      event.currentTarget.classList.add("active");
+    }
+  </script>
+</body>
+
+</html>

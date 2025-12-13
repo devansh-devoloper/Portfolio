@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — Devansh Rastogi</title>
+    <link rel="stylesheet" href="styles/blog.css" />
+  </head>
+
+  <body>
+    <main class="blog-page">
+      <header class="blog-hero">
+        <div class="hero-inner">
+          <h1>Thoughts & Articles</h1>
+          <p class="subtitle">
+            Writing about web development, design, and learning. Browse recent
+            posts or search to find something helpful.
+          </p>
+          <div class="search-row">
+            <input
+              type="search"
+              placeholder="Search posts by title or keyword…"
+              aria-label="Search posts"
+            />
+            <select aria-label="Filter by category">
+              <option value="all">All categories</option>
+              <option value="web">Web Dev</option>
+              <option value="design">Design</option>
+              <option value="learning">Learning</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <section class="posts-wrapper">
+        <div class="posts-grid">
+          <article class="post-card">
+            <a class="thumb" href="#" aria-hidden="true">
+              <img
+                src="../assets/imgs/blog1.svg"
+                alt=""
+                loading="lazy"
+              />
+            </a>
+            <div class="post-body">
+              <div class="meta">Jan 5, 2025 • Web Dev</div>
+              <h2 class="post-title">
+                <a href="#">Building Accessible Forms: Patterns & Tips</a>
+              </h2>
+              <p class="excerpt">
+                A practical guide to designing forms that are usable,
+                accessible, and provide a smooth user experience across devices.
+              </p>
+              <div class="card-actions">
+                <a class="read-more" href="#">Read article →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <a class="thumb" href="#" aria-hidden="true">
+              <img
+                src="../assets/imgs/blog2.svg"
+                alt=""
+                loading="lazy"
+              />
+            </a>
+            <div class="post-body">
+              <div class="meta">Dec 22, 2024 • Design</div>
+              <h2 class="post-title">
+                <a href="#">Color and Contrast for Modern UI</a>
+              </h2>
+              <p class="excerpt">
+                How to pick palettes, maintain contrast, and create visual
+                hierarchy for expressive interfaces.
+              </p>
+              <div class="card-actions">
+                <a class="read-more" href="#">Read article →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <a class="thumb" href="#" aria-hidden="true">
+              <img
+                src="../assets/imgs/blog3.svg"
+                alt=""
+                loading="lazy"
+              />
+            </a>
+            <div class="post-body">
+              <div class="meta">Nov 14, 2024 • Learning</div>
+              <h2 class="post-title">
+                <a href="#">A Roadmap to Learn JavaScript in 2024</a>
+              </h2>
+              <p class="excerpt">
+                A curated learning path, tools, and project ideas to help you
+                level up your JavaScript skills this year.
+              </p>
+              <div class="card-actions">
+                <a class="read-more" href="#">Read article →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <a class="thumb" href="#" aria-hidden="true">
+              <img
+                src="../assets/imgs/blog4.svg"
+                alt=""
+                loading="lazy"
+              />
+            </a>
+            <div class="post-body">
+              <div class="meta">Oct 2, 2024 • Web Dev</div>
+              <h2 class="post-title">
+                <a href="#">Optimizing Images for Performance</a>
+              </h2>
+              <p class="excerpt">
+                Tips on responsive images, modern formats, and build-time
+                tooling to reduce load times without sacrificing quality.
+              </p>
+              <div class="card-actions">
+                <a class="read-more" href="#">Read article →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="pagination">
+          <button class="page-btn" disabled>Prev</button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">Next</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
